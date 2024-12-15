@@ -1,0 +1,9 @@
+﻿global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.JsonPatch;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Azure.Functions.Worker;
+global using Microsoft.Azure.Functions.Worker.Builder;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using PatchSample.Functions.Person.Dtos;
+global using PatchSample.Functions.Person.Repository;

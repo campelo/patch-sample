@@ -1,0 +1,31 @@
+<div class="person-edit">
+  <h1>{{ isEdit ? 'Edit Person' : 'Create Person' }}</h1>
+  <form (ngSubmit)="savePerson()">
+    <label>
+      Name:
+      <input [(ngModel)]="person.name" name="name" required />
+    </label>
+    <label>
+      Age:
+      <input [(ngModel)]="person.age" name="age" type="number" required />
+    </label>
+    <label>
+      Street:
+      <input [(ngModel)]="person.address.street" name="street" />
+    </label>
+    <label>
+      City:
+      <input [(ngModel)]="person.address.city" name="city" />
+    </label>
+    <label>
+      State:
+      <input [(ngModel)]="person.address.state" name="state" />
+    </label>
+    <label>
+      Zip:
+      <input [(ngModel)]="person.address.zip" name="zip" />
+    </label>
+    <button type="submit">Save</button>
+    <button type="button" (click)="goBack()">Cancel</button>
+  </form>
+</div>

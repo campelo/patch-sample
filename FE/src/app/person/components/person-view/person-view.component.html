@@ -1,0 +1,10 @@
+<div class="person-view">
+  <h1>Person List</h1>
+  <button (click)="createNew()">Create New</button>
+  <ul>
+    <li *ngFor="let person of people">
+      {{ person.name }} ({{ person.age }} years old) {{ person.address?.street }} {{ person.address?.city }} {{ person.address?.state }} {{ person.address?.zip }}
+      <button (click)="editPerson(person.id)">Edit</button>
+    </li>
+  </ul>
+</div>
