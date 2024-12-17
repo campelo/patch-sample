@@ -16,8 +16,8 @@ export class PersonViewComponent implements OnInit, OnDestroy {
   private routerSubscription: Subscription = new Subscription();
 
   constructor(
-    private personService: PersonService,
-    private router: Router,
+    private readonly personService: PersonService,
+    private readonly router: Router,
   ) {}
 
   ngOnInit(): void {
